@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Reach Media</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+  }
+  </script>
+  
+<body>
+  
+
+<!-- HERO -->
+<header class="hero" id="home">
+
+  <h1 class="lang en">GLOBAL REACH MEDIA</h1>
+<h1 class="lang it" style="display:none;">GLOBAL REACH MEDIA</h1>
+
+<p class="lang en">
+  Strategy. Design. Performance.<br>
+  We help businesses increase visibility, attract the right audience,
+  and turn clicks into real results.
+</p>
+<p class="lang it" style="display:none;">
+  Strategia. Design. Performance.<br>
+  Aiutiamo le aziende ad aumentare la visibilità, attrarre il pubblico giusto,
+  e trasformare i clic in risultati concreti.
+</p>
+<div class="home-images">
+  <img src="globalreach1.jpg"alt="">
+  <img src="globalreach2.jpg"alt="">
+</div>
+
+  <!-- BUTTON SCROLLS TO FORM -->
+  <a href="#contact-form" class="btn">Start now</a>
+</header>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <div class="nav-logo">
+    <img src="Media.png" alt="Global Reach Media Logo">
+  </div>
+
+  <div class="nav-links">
+     <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#works">Works</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#blog">Blog</a>
+  </div>
+  <div class="lang-switcher">
+    <button onclick="switchLang('en')">🇬🇧 EN</button>
+    <button onclick="switchLang('it')">🇮🇹 IT</button>
+  </div>
+</nav>
+</nav>
+
+
+<!-- SERVICES -->
+<section id="services">
+  <h2 class="lang en">Our Services</h2>
+<h2 class="lang it" style="display:none;">I nostri servizi</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Digital Marketing</h3>
+      <h3 class="lang it" style="display:none;">Marketing Digitale</h3>
+      <p class="lang en">Targeted strategies that increase reach, engagement, and conversions.</p>
+      <p class="lang it" style="display:none;">Strategie mirate che aumentano copertura, engagement e conversioni.</p>
+    </div>
+
+    <div class="card">
+      <h3 class="lang en">Social Media Management</h3>
+      <h3 class="lang it" style="display:none;">Gestione Social Media</h3>
+      <p class="lang en">Content, growth, and consistency across platforms that matter.</p>
+      <p class="lang it" style="display:none;">Contenuti, crescita e costanza sulle piattaforme giuste.</p>
+    </div>
+    <div class="card">
+      <h3 class="lang en">Brand Strategy</h3>
+      <h3 class="lang it" style="display:none;">Strategia di Brand</h3>
+      <p class="lang en">Positioning, messaging, and identity that make your brand stand out.</p>
+      <p class="lang it" style="display:none;">Posizionamento, messaggi e identità per far risaltare il tuo brand.</p>
+    </div>
+
+    <div class="card">
+      <h3 class="lang en">Web Design & Development</h3>
+      <h3 class="lang it" style="display:none;">Web Design & Sviluppo</h3>
+      <p class="lang en">Clean, fast, conversion-focused websites built to perform.</p>
+      <p class="lang it" style="display:none;">Siti web puliti, veloci e ottimizzati per conversioni.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="lang en">About</h2>
+  <h2 class="lang it" style="display:none;">Chi siamo</h2>
+  <p class="lang en">
+    We help brands grow through data-driven digital strategies,
+    high-impact design, and performance-focused marketing.
+  </p>
+  <p class="lang it" style="display:none;">
+    Aiutiamo i brand a crescere con strategie digitali basate sui dati,
+    design di grande impatto e marketing orientato ai risultati.
+  </p>
+</section>
+  
+
+<!-- CONTACT FORM (TARGET) -->
+<section id="contact-form">
+  <h2 class="lang en">Start Your Project</h2>
+  <h2 class="lang it" style="display:none;">Inizia il tuo progetto</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your name" required>
+    <input type="email" placeholder="Your email" required>
+    <textarea placeholder="Tell us about your project" required></textarea>
+    <button type="submit" class="btn lang en">Send request</button>
+    <button type="submit" class="btn lang it" style="display:none;">Invia richiesta</button>
+  </form>
+</section>
+
+<!-- CONTACT INFO -->
+
+<section id="contact"> 
+  <div class="contact-info">
+    <a href="mailto:info@globalmedia.com" class="contact-link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M2 4h20v16H2V4zm18 2H4v2l8 5 8-5V6zm0 12V10l-8 5-8-5v8h16z"/>
+      </svg>
+      info@globalmedia.com
+    </a>
+    <a href="https://wa.me/447301958041" class="contact-link" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i> +44 7301 958041
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Global Reach Media</p>
+</footer>
+
+<!-- LANGUAGE TOGGLE JS-->
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+  }
+  </script>
+</body>
+</html>
