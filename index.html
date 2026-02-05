@@ -113,48 +113,39 @@
 </section>
   
 
-<!-- CONTACT FORM (TARGET) -->
-<section id="contact-form">
-  <h2 class="lang en">Start Your Project</h2>
-  <h2 class="lang it" style="display:none;">Inizia il tuo progetto</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Your name" required>
-    <input type="email" placeholder="Your email" required>
-    <textarea placeholder="Tell us about your project" required></textarea>
-    <button type="submit" class="btn lang en">Send request</button>
-    <button type="submit" class="btn lang it" style="display:none;">Invia richiesta</button>
-  </form>
-</section>
+<section id="contact">
+  <div class="contact-wrapper">
 
-<!-- CONTACT INFO -->
+    <!-- FORM -->
+    <form 
+      class="contact-form"
+      name="contact" 
+      method="POST" 
+      data-netlify="true" 
+      netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="contact">
+      <input type="hidden" name="bot-field">
 
-<section id="contact"> 
-  <div class="contact-info">
-    <a href="mailto:info@globalmedia.com" class="contact-link">
-      info@globalmedia.com
-    </a>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
 
-    <a href="https://wa.me/447301958041" class="contact-link" target="_blank">
-      +44 7301 958041
-    </a>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
   </div>
-
-  <form 
-    name="contact" 
-    method="POST" 
-    data-netlify="true" 
-    netlify-honeypot="bot-field"
-  >
-    <input type="hidden" name="form-name" value="contact">
-    <input type="hidden" name="bot-field">
-
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-
-    <button type="submit" class="btn">Send Message</button>
-  </form>
 </section>
+ <!-- CONTACT INFO -->
+ <div class="contact-info">
+  <a href="mailto:info@globalmedia.com" class="contact-link">
+    info@globalmedia.com
+  </a>
+
+  <a href="https://wa.me/447301958041" class="contact-link" target="_blank">
+    +44 7301 958041
+  </a>
+</div>
 
 <!-- FOOTER -->
 <footer>
