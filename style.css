@@ -144,6 +144,61 @@
       } .btn:hover 
       { transform: translateY(-3px); 
      box-shadow: 0 6px 15px rgba(0,0,0,0.4); } 
+
+     /* CONCEPT SECTION */
+#concepts {
+  padding: 100px 20px;
+  background: #0f0f0f;
+}
+
+.concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.concept-card {
+  background: #111;
+  padding: 35px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.concept-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.concept-card p {
+  color: var(--gray);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.concept-result {
+  color: var(--green);
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.concept-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .concepts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .concepts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
      /* FOOTER */ 
      footer { 
       text-align: center; 
