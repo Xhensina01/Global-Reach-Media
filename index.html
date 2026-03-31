@@ -7,10 +7,11 @@
  <link rel="stylesheet" href="style.css">
 </head>
 <script>
-  function switchLang(lang) {
-    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-    document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
-  }
+function switchLang(lang) {
+  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+}
+</script>
   </script>
   
 <body>
@@ -18,48 +19,60 @@
 
 <!-- HERO -->
 <header class="hero" id="home">
+  <div class="hero-content">
 
-  <h1 class="lang en">GLOBAL REACH MEDIA</h1>
-<h1 class="lang it" style="display:none;">GLOBAL REACH MEDIA</h1>
+    <!-- English -->
+    <h1 class="lang en">GLOBAL REACH MEDIA</h1>
+    <p class="lang en founder-line">
+      Founded & Led by <strong>Xhensina Ibi</strong>
+    </p>
+    <p class="lang en hero-subtitle">
+      Strategy. Design. Performance.<br>
+      I help businesses increase visibility, attract the right audience,
+      and turn clicks into real results.
+    </p>
+    <a href="#contact" class="btn lang en">Work With Me</a>
 
-<p class="lang en">
-  Strategy. Design. Performance.<br>
-  We help businesses increase visibility, attract the right audience,
-  and turn clicks into real results.
-</p>
-<p class="lang it" style="display:none;">
-  Strategia. Design. Performance.<br>
-  Aiutiamo le aziende ad aumentare la visibilità, attrarre il pubblico giusto,
-  e trasformare i clic in risultati concreti.
-</p>
-<div class="home-images">
-  <img src="globalreach1.jpg"alt="">
-  <img src="globalreach2.jpg"alt="">
-</div>
+    <!-- Italian -->
+    <h1 class="lang it" style="display:none;">GLOBAL REACH MEDIA</h1>
+    <p class="lang it founder-line" style="display:none;">
+      Fondata e guidata da <strong>Xhensina Ibi</strong>
+    </p>
+    <p class="lang it hero-subtitle" style="display:none;">
+      Strategia. Design. Performance.<br>
+      Aiuto le aziende ad aumentare la visibilità, attrarre il pubblico giusto,
+      e trasformare i clic in risultati concreti.
+    </p>
+    <a href="#contact" class="btn lang it" style="display:none;">Contattami</a>
 
-  <!-- BUTTON SCROLLS TO FORM -->
-  <a href="#contact-form" class="btn">Start now</a>
+  </div>
 </header>
+
+
+<div class="home-images">
+  <img src="images/globalreach1.jpg" alt="Project 1">
+  <img src="images/globalreach2.jpg" alt="Project 2">
+</div>
 
 <!-- NAV -->
 <nav class="main-nav">
   <div class="nav-logo">
-    <img src="Media.png" alt="Global Reach Media Logo">
+    <img src="images/Media-removebg-preview.png" alt="Logo" class="logo">
   </div>
 
   <div class="nav-links">
-     <a href="#home">Home</a>
+    <a href="#home">Home</a>
     <a href="#services">Services</a>
     <a href="#works">Works</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
     <a href="#blog">Blog</a>
   </div>
+
   <div class="lang-switcher">
-    <button onclick="switchLang('en')">🇬🇧 EN</button>
-    <button onclick="switchLang('it')">🇮🇹 IT</button>
+    <button onclick="switchLang('en')">EN</button>
+    <button onclick="switchLang('it')">IT</button>
   </div>
-</nav>
 </nav>
 
 
@@ -100,41 +113,66 @@
 
 <!-- ABOUT -->
 <section id="about">
-  <h2 class="lang en">About</h2>
-  <h2 class="lang it" style="display:none;">Chi siamo</h2>
+  <h2 class="lang en">About Me</h2>
+  <h2 class="lang it" style="display:none;">Chi sono</h2>
+
+  <!-- English -->
   <p class="lang en">
-    We help brands grow through data-driven digital strategies,
-    high-impact design, and performance-focused marketing.
+    Hi, I’m <strong>Xhensina Ibi</strong>, a Digital Marketing Strategist with over 8 years of experience helping brands grow globally.
+  </p>
+  <p class="lang en">
+    I specialize in strategy, performance marketing, social media campaigns, and creating results-driven digital solutions.  
+    My approach combines creativity with data to increase visibility, attract the right audience, and turn clicks into real business growth.
+  </p>
+  <p class="lang en">
+    Whether you need a full campaign, content strategy, or optimization of your digital presence, I deliver tailored solutions that work.
+  </p>
+
+  <!-- Italian -->
+  <p class="lang it" style="display:none;">
+    Ciao, sono <strong>Xhensina Ibi</strong>, Digital Marketing Strategist con oltre 8 anni di esperienza nell’aiutare i brand a crescere a livello globale.
   </p>
   <p class="lang it" style="display:none;">
-    Aiutiamo i brand a crescere con strategie digitali basate sui dati,
-    design di grande impatto e marketing orientato ai risultati.
+    Mi specializzo in strategia, performance marketing, campagne social e soluzioni digitali orientate ai risultati.  
+    Il mio approccio combina creatività e dati per aumentare la visibilità, attrarre il pubblico giusto e trasformare i clic in crescita reale per il business.
+  </p>
+  <p class="lang it" style="display:none;">
+    Che tu abbia bisogno di una campagna completa, di una strategia di contenuti o dell’ottimizzazione della tua presenza digitale, fornisco soluzioni su misura che funzionano.
   </p>
 </section>
-  
+
 
 <section id="contact">
-  <div class="contact-wrapper">
+  <h2>Contact Us</h2>
 
-    <!-- FORM -->
-    <form 
-      class="contact-form"
-      name="contact" 
-      method="POST" 
-      data-netlify="true" 
-      netlify-honeypot="bot-field"
-    >
-      <input type="hidden" name="form-name" value="contact">
-      <input type="hidden" name="bot-field">
+  <form 
+    class="contact-form"
+    name="contact" 
+    method="POST" 
+    data-netlify="true" 
+    netlify-honeypot="bot-field"
+  >
+    <!-- Hidden input required by Netlify -->
+    <input type="hidden" name="form-name" value="contact">
 
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
+    <!-- Anti-bot honeypot field -->
+    <p hidden>
+      <label>Don’t fill this out: <input name="bot-field"></label>
+    </p>
 
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+    <!-- User fields -->
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
 
   </div>
+   <!-- CONCEPTS-->
   <section id="concepts">
     <h2>Strategic Campaign Concepts</h2>
   
