@@ -1,21 +1,19 @@
-<!DOCTYPE 
-html> <html 
-lang="en"> <head>
+<!DOCTYPE html> <html>
+  <html lang="en">
+<head>
    <meta charset="UTF-8">
-    <meta name="viewport" 
-    content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Global Reach Media</title> 
-     <link rel="stylesheet" href="style.css"> </head> 
-     <body></body>
-
-      <!-- Hamburger + Logo -->
+     <link rel="stylesheet" href="style.css"> 
+    </head> 
+     <body>
+   <!-- Hamburger + Logo -->
        <header> <div class="logo"></div> <div 
        class="hamburger" id="hamburger">&#9776;</div> </header> <script> function switchLang(lang)
         { document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
          document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block'); } 
       </script>
       </script> 
-      <body>
         <!-- HERO --> 
         <header class="hero" id="home"> <div class="hero-content">
            <!-- English -->
@@ -113,26 +111,40 @@ attract the right audience, and turn clicks into real business growth. </p>
     fornisco soluzioni su misura che funzionano. </p>
   </section>
    <section 
-   id="contact"> <h2>Contact Us</h2> <form
-   class="contact-form" name="contact" method="POST" 
-   data-netlify="true" netlify-honeypot="bot-field" >
-  <!-- Hidden input required by Netlify -->
-    <input type="hidden" name="form-name" value="contact"> 
+   id="contact"> <h2>Contact Us</h2> 
+   <form
+   class="contact-form" 
+    action="https://formspree.io/f/mykojrdg" 
+    method="POST"
+  >
+   
+  <input 
+  type="text" 
+  name="name" 
+  placeholder="Your Name" 
+  required
+>
+
+<input 
+  type="email" 
+  name="email" 
+  placeholder="Your Email" 
+  required>
     
-  <!-- Anti-bot honeypot field -->
-     <p hidden> <label>Don’t fill this out:
-     <input name="bot-field"></label> </p>
-     <!-- User fields --> 
-     <input type="text" name="name" 
-     placeholder="Your Name" required> <input
-     type="email" name="email" 
-     placeholder="Your Email" required> <textarea
-     name="message" 
-     placeholder="Your Message" required></textarea>
-      <!-- Submit button --> 
-    <button type="submit" class="btn">Send Message</button> 
+
+  <textarea 
+      name="message" 
+      placeholder="Your Message" 
+      required >
+  </textarea>
+
+    <!-- Optional extras -->
+    <input type="hidden" name="_subject" value="New message from website">
+
+    <button type="submit" class="btn">Send Message</button>
   </form>
- </section>
+</section>
+
  <!-- CONCEPTS--> 
  <section
   id="concepts"> 
