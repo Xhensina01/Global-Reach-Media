@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Reach Media | Blog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo"></div>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+</header>
+
+<nav class="main-nav">
+  <div class="nav-logo">
+    <img src="images/images/logo.jpg" alt="Logo" class="logo">
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="works.html">Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="lang-switcher">
+    <button onclick="switchLang('en')">EN 🇬🇧</button>
+    <button onclick="switchLang('it')"> IT🇮🇹</button>
+  </div>
+</nav>
+
+<section id="about" style="padding-top:180px;">
+  <h2 class="lang en">Blog</h2>
+  <h2 class="lang it" style="display:none;">Blog</h2>
+
+  <p class="lang en">New articles coming soon.</p>
+  <p class="lang it" style="display:none;">Nuovi articoli in arrivo a breve.</p>
+</section>
+
+<!-- CONTACT INFO -->
+<div class="contact-info">
+  <a href="mailto:info@globalmedia.com" class="contact-link"> info@globalmedia.com </a>
+  <a href="https://wa.me/447301958041" class="contact-link" target="_blank"> +44 7301 958041 </a>
+  <a href="https://www.instagram.com/global_reachmedia/" class="contact-link" target="_blank"> Instagram </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Global Reach Media</p>
+</footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+  }
+</script>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  hamburger.onclick = () => {
+    if (navMenu) navMenu.classList.toggle('active');
+  };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Reach Media | About</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo"></div>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+</header>
+
+<nav class="main-nav">
+  <div class="nav-logo">
+    <img src="images/images/logo.jpg" alt="Logo" class="logo">
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="works.html">Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="lang-switcher">
+    <button onclick="switchLang('en')">EN 🇬🇧</button>
+    <button onclick="switchLang('it')"> IT🇮🇹</button>
+  </div>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" style="padding-top:180px;">
+  <h2 class="lang en">About Us</h2>
+  <h2 class="lang it" style="display:none;">Chi siamo</h2>
+
+  <div class="home-images">
+    <img src="images/images/globalreach1.JPG" alt="Project 1">
+  </div>
+
+  <!-- English -->
+  <p class="lang en">
+    Global Reach Media is a digital marketing agency with over 8 years of combined experience helping brands grow globally.
+  </p>
+  <p class="lang en">
+    We specialize in strategy, performance marketing, social media campaigns,
+    and creating results-driven digital solutions.
+    Our approach combines creativity with data to increase visibility,
+    attract the right audience, and turn clicks into real business growth.
+  </p>
+  <p class="lang en">
+    Whether you need a full campaign, content strategy, or optimization of your digital presence,
+    we deliver tailored solutions that work.
+  </p>
+
+  <!-- Italian -->
+  <p class="lang it" style="display:none;">
+    Global Reach Media è un'agenzia di digital marketing con oltre 8 anni di esperienza combinata nell'aiutare i brand a crescere a livello globale.
+  </p>
+  <p class="lang it" style="display:none;">
+    Ci specializziamo in strategia, performance marketing,
+    campagne social e soluzioni digitali orientate ai risultati.
+    Il nostro approccio combina creatività e dati per aumentare la visibilità,
+    attrarre il pubblico giusto e trasformare i clic in crescita reale per il business.
+  </p>
+  <p class="lang it" style="display:none;">
+    Che tu abbia bisogno di una campagna completa,
+    di una strategia di contenuti o dell'ottimizzazione della tua presenza digitale,
+    forniamo soluzioni su misura che funzionano.
+  </p>
+</section>
+
+<!-- CONTACT INFO -->
+<div class="contact-info">
+  <a href="mailto:info@globalmedia.com" class="contact-link"> info@globalmedia.com </a>
+  <a href="https://wa.me/447301958041" class="contact-link" target="_blank"> +44 7301 958041 </a>
+  <a href="https://www.instagram.com/global_reachmedia/" class="contact-link" target="_blank"> Instagram </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Global Reach Media</p>
+</footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+  }
+</script>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  hamburger.onclick = () => {
+    if (navMenu) navMenu.classList.toggle('active');
+  };
+</script>
+
+</body>
+</html>

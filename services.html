@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Reach Media | Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo"></div>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+</header>
+
+<nav class="main-nav">
+  <div class="nav-logo">
+    <img src="images/images/logo.jpg" alt="Logo" class="logo">
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="works.html">Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="lang-switcher">
+    <button onclick="switchLang('en')">EN 🇬🇧</button>
+    <button onclick="switchLang('it')"> IT🇮🇹</button>
+  </div>
+</nav>
+
+<!-- SERVICES -->
+<section id="services" style="padding-top:180px;">
+  <h2 class="lang en">Our Services</h2>
+  <h2 class="lang it" style="display:none;"> I nostri servizi</h2>
+  <div class="cards">
+
+    <div class="card">
+      <img src="images/images/service-digital-marketing.jpg" alt="Digital Marketing" style="width:100%;border-radius:10px;margin-bottom:20px;">
+      <h3 class="lang en">Digital Marketing</h3>
+      <h3 class="lang it" style="display:none;">Marketing Digitale</h3>
+      <p class="lang en">Targeted strategies that increase reach, engagement, and conversions.</p>
+      <p class="lang it" style="display:none;">Strategie mirate che aumentano copertura, engagement e conversioni.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/images/service-social-media.jpg" alt="Social Media Management" style="width:100%;border-radius:10px;margin-bottom:20px;">
+      <h3 class="lang en">Social Media Management</h3>
+      <h3 class="lang it" style="display:none;">Gestione Social Media</h3>
+      <p class="lang en">Content, growth, and consistency across platforms that matter.</p>
+      <p class="lang it" style="display:none;">Contenuti, crescita e costanza sulle piattaforme giuste.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/images/service-brand-strategy.jpg" alt="Brand Strategy" style="width:100%;border-radius:10px;margin-bottom:20px;">
+      <h3 class="lang en">Brand Strategy</h3>
+      <h3 class="lang it" style="display:none;">Strategia di Brand</h3>
+      <p class="lang en">Positioning, messaging, and identity that make your brand stand out.</p>
+      <p class="lang it" style="display:none;">Posizionamento, messaggi e identità per far risaltare il tuo brand.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/images/service-web-design.jpg" alt="Web Design & Development" style="width:100%;border-radius:10px;margin-bottom:20px;">
+      <h3 class="lang en">Web Design & Development</h3>
+      <h3 class="lang it" style="display:none;">Web Design & Sviluppo</h3>
+      <p class="lang en">Clean, fast, conversion-focused websites built to perform.</p>
+      <p class="lang it" style="display:none;">Siti web puliti, veloci e ottimizzati per conversioni.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT INFO -->
+<div class="contact-info">
+  <a href="mailto:info@globalmedia.com" class="contact-link"> info@globalmedia.com </a>
+  <a href="https://wa.me/447301958041" class="contact-link" target="_blank"> +44 7301 958041 </a>
+  <a href="https://www.instagram.com/global_reachmedia/" class="contact-link" target="_blank"> Instagram </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Global Reach Media</p>
+</footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+  }
+</script>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  hamburger.onclick = () => {
+    if (navMenu) navMenu.classList.toggle('active');
+  };
+</script>
+
+</body>
+</html>
