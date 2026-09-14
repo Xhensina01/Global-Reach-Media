@@ -5,14 +5,14 @@
    /* modern font */
    } :root
     { --green: #00B26A; 
-   --black: #0D0D0D;
+   --black: #1B1712;
    --white: #FFFFFF;
-   --gray: #A0A0A0;
-   --light-gray: #1a1a1a;
+   --gray: #A8A096;
+   --light-gray: #332C24;
    --transition: 0.3s
     ease-in-out; } 
      body { background:
-     var(--black); color: 
+     radial-gradient(ellipse at top, #241E17 0%, #140F0B 65%); color: 
      var(--white);
      line-height: 1.6;
    } 
@@ -83,13 +83,13 @@
          /* optional: subtle shadow */ 
         } /* ABOUT TEXT */ /* ABOUT SECTION */ 
         #about { padding: 100px 20px; /* space around the section */
-        background-color: #0D0D0D; /* subtle background for elegance */ 
+        background-color: #1F1A15; /* warm, subtle elevation from body */ 
         text-align: center; /* center headings, paragraphs on desktop */ 
         } #about h2 { 
         font-size: 2rem;
         font-weight: 700; 
         margin-bottom: 30px; 
-         color: 00B26A; 
+         color: var(--green); 
         } .about-text,
          #about p { 
          max-width: 750px;
@@ -158,7 +158,7 @@
             grid; grid-template-columns: 
            repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px; 
-          } .card { background: #111111; 
+          } .card { background: #241F19; 
             padding: 30px 25px; 
            text-align: center; 
            border-radius: 12px;
@@ -185,7 +185,7 @@
      /* CONCEPT SECTION */
 #concepts {
   padding: 100px 20px;
-  background: #0f0f0f;
+  background: #1E1914;
 }
 
 .concepts-grid {
@@ -195,7 +195,7 @@
 }
 
 .concept-card {
-  background: #111;
+  background: #241F19;
   padding: 35px;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -268,7 +268,7 @@
    /* CONTACT FORM STYLING */
 #contact {
   padding: 80px 20px;
-  background: #0f0f0f;
+  background: #1E1914;
   text-align: center;
 }
 
@@ -290,8 +290,8 @@
 /* Inputs & textarea */
 .contact-form input,
 .contact-form textarea {
-  background: #111;
-  border: 1px solid #1f1f1f;
+  background: #241F19;
+  border: 1px solid #3A3128;
   padding: 15px 18px;
   border-radius: 10px;
   color: var(--white);
@@ -409,7 +409,7 @@
  padding: 5px 10px;
  cursor: pointer; 
  border: none; 
- background-color:black; 
+ background-color:var(--black); 
  color: white; 
  border-radius: 5px; 
  font-weight: 500;
