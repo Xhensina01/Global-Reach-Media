@@ -342,6 +342,64 @@
     font-size: 0.95rem;
   }
 }        
+/* HAMBURGER / MOBILE NAV */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
+  line-height: 1;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    padding: 15px 20px;
+    justify-content: space-between;
+  }
+
+  .nav-logo img {
+    height: 55px;
+  }
+
+  .hamburger {
+    display: block;
+    order: 3;
+  }
+
+  .lang-switcher {
+    margin-left: 0;
+    order: 2;
+  }
+
+  .lang-switcher button {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    margin: 0;
+    background: var(--black);
+    border-left: 1px solid var(--light-gray);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    transition: right 0.35s ease-in-out;
+    z-index: 1200;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+}
+
 .lang-switcher { 
  margin-left: auto;      /* push to the right of the nav */ 
  display: flex; gap: 8px;  /* space between buttons */
