@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Reach Media | How Important Are Google Reviews?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="main-nav">
+  <div class="nav-logo">
+    <img src="images/images/logo.jpg" alt="Logo" class="logo">
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="works.html">Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="lang-switcher">
+    <button onclick="switchLang('en')">EN 🇬🇧</button>
+    <button onclick="switchLang('it')"> IT🇮🇹</button>
+  </div>
+
+  <div class="hamburger" id="hamburger">&#9776;</div>
+</nav>
+
+<section id="about" style="padding-top:180px;">
+
+  <h2 class="lang en">How Important Are Google Reviews?</h2>
+  <h2 class="lang it" style="display:none;">Quanto Sono Importanti le Recensioni su Google?</h2>
+
+  <!-- ENGLISH -->
+  <p class="lang en">
+    Before people call you, message you, or walk through your door, most of them check your Google reviews first. In a world where anyone can look up your business in seconds, reviews have become the new word-of-mouth — except now they're public, permanent, and searchable.
+  </p>
+
+  <p class="lang en">
+    <strong>They directly affect how easily people find you.</strong> Google factors review count, rating, and recency into local search rankings. Two similar businesses can rank very differently in the map pack simply because one actively collects reviews and the other doesn't.
+  </p>
+
+  <p class="lang en">
+    <strong>They're the deciding factor for new customers.</strong> Most people won't choose a business with no reviews or a low rating, even if the price and service are identical to a competitor's. A strong set of recent, genuine reviews removes hesitation and speeds up the decision to buy.
+  </p>
+
+  <p class="lang en">
+    <strong>How you respond matters as much as the review itself.</strong> Replying to positive reviews shows appreciation. Replying calmly and professionally to a negative one shows future customers exactly how you handle problems — often turning a bad moment into a trust-building one.
+  </p>
+
+  <p class="lang en">
+    <strong>They're free market research.</strong> Patterns in your reviews — what people praise, what they complain about — are direct insight into what's working and what needs fixing, straight from the people who matter most.
+  </p>
+
+  <p class="lang en">
+    The takeaway: don't leave reviews to chance. Actively ask satisfied customers to leave one, respond to every review you get, and treat your rating as a living, ongoing part of your marketing — because that's exactly what it is.
+  </p>
+
+  <!-- ITALIAN -->
+  <p class="lang it" style="display:none;">
+    Prima di chiamarti, scriverti o entrare nel tuo negozio, la maggior parte delle persone controlla prima le tue recensioni su Google. In un mondo dove chiunque può cercare la tua attività in pochi secondi, le recensioni sono diventate il nuovo passaparola — solo che ora sono pubbliche, permanenti e ricercabili.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>Influenzano direttamente quanto sei facile da trovare.</strong> Google considera il numero di recensioni, la valutazione e la loro recenza nel posizionamento delle ricerche locali. Due attività simili possono posizionarsi in modo molto diverso semplicemente perché una raccoglie attivamente recensioni e l'altra no.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>Sono il fattore decisivo per i nuovi clienti.</strong> La maggior parte delle persone non sceglierà un'attività senza recensioni o con una valutazione bassa, anche se prezzo e servizio sono identici a quelli di un concorrente. Un buon numero di recensioni recenti e genuine elimina l'esitazione e velocizza la decisione d'acquisto.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>Come rispondi conta quanto la recensione stessa.</strong> Rispondere alle recensioni positive mostra apprezzamento. Rispondere con calma e professionalità a una negativa mostra ai futuri clienti esattamente come gestisci i problemi — spesso trasformando un momento negativo in uno che costruisce fiducia.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>Sono ricerche di mercato gratuite.</strong> Gli schemi nelle tue recensioni — cosa le persone apprezzano, di cosa si lamentano — sono un'indicazione diretta di cosa funziona e cosa va migliorato, direttamente dalle persone che contano di più.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    In conclusione: non lasciare le recensioni al caso. Chiedi attivamente ai clienti soddisfatti di lasciarne una, rispondi a ogni recensione che ricevi, e tratta la tua valutazione come una parte viva e continua del tuo marketing — perché è esattamente ciò che è.
+  </p>
+
+  <p style="margin-top:40px;">
+    <a href="blog.html" class="btn lang en">&larr; Back to Blog</a>
+    <a href="blog.html" class="btn lang it" style="display:none;">&larr; Torna al Blog</a>
+  </p>
+
+</section>
+
+<!-- CONTACT INFO -->
+<div class="contact-info">
+  <a href="mailto:info@globalmedia.com" class="contact-link"> info@globalmedia.com </a>
+  <a href="https://wa.me/447301958041" class="contact-link" target="_blank"> +44 7301 958041 </a>
+  <a href="https://www.instagram.com/global_reachmedia/" class="contact-link" target="_blank"> Instagram </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Global Reach Media</p>
+</footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+  }
+</script>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.onclick = () => {
+    navLinks.classList.toggle('active');
+  };
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('active'));
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Reach Media | Why Creating a Google Business Page Is Important</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="main-nav">
+  <div class="nav-logo">
+    <img src="images/images/logo.jpg" alt="Logo" class="logo">
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="works.html">Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="lang-switcher">
+    <button onclick="switchLang('en')">EN 🇬🇧</button>
+    <button onclick="switchLang('it')"> IT🇮🇹</button>
+  </div>
+
+  <div class="hamburger" id="hamburger">&#9776;</div>
+</nav>
+
+<section id="about" style="padding-top:180px;">
+
+  <h2 class="lang en">Why Creating a Google Business Page Is Important</h2>
+  <h2 class="lang it" style="display:none;">Perché Creare una Pagina Google Business è Importante</h2>
+
+  <!-- ENGLISH -->
+  <p class="lang en">
+    If your business isn't on Google Business Profile yet, you're invisible to a huge chunk of people actively looking for what you offer — right at the moment they're ready to buy. It's free, it takes fifteen minutes to set up, and it's one of the highest-return marketing moves a small business can make.
+  </p>
+
+  <p class="lang en">
+    <strong>You show up where people actually search.</strong> When someone searches "digital marketing agency near me" or looks at Google Maps, only businesses with a Business Profile appear in that map pack and local results. Without one, you simply don't exist in that search — no matter how good your website is.
+  </p>
+
+  <p class="lang en">
+    <strong>It builds instant trust.</strong> A complete profile — photos, opening hours, phone number, website link, and real customer reviews — gives people everything they need to decide to contact you, before they even click through to your site. An incomplete or missing profile quietly signals "not established" or "not trustworthy."
+  </p>
+
+  <p class="lang en">
+    <strong>It's free advertising, essentially forever.</strong> Unlike paid ads that stop the moment your budget runs out, your Business Profile keeps working around the clock, showing up in searches and maps without any ongoing spend.
+  </p>
+
+  <p class="lang en">
+    <strong>It opens a direct line to your customers.</strong> You can post updates, answer questions publicly, share offers, and respond to reviews — all inside the same panel people see when they search your name.
+  </p>
+
+  <p class="lang en">
+    Bottom line: a Google Business Profile isn't optional anymore. It's the modern equivalent of being listed in the phone book — except it's the first thing people check before deciding to trust you.
+  </p>
+
+  <!-- ITALIAN -->
+  <p class="lang it" style="display:none;">
+    Se la tua attività non è ancora su Google Business Profile, sei invisibile per una grande fetta di persone che stanno cercando attivamente ciò che offri — proprio nel momento in cui sono pronte ad acquistare. È gratuito, richiede quindici minuti per essere configurato, ed è una delle mosse di marketing con il ritorno più alto che una piccola impresa possa fare.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>Appari dove le persone cercano davvero.</strong> Quando qualcuno cerca "agenzia di digital marketing vicino a me" o guarda Google Maps, solo le attività con un profilo Business appaiono in quei risultati locali. Senza un profilo, semplicemente non esisti in quella ricerca — indipendentemente da quanto sia buono il tuo sito web.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>Costruisce fiducia immediata.</strong> Un profilo completo — foto, orari di apertura, numero di telefono, link al sito e recensioni reali dei clienti — dà alle persone tutto ciò di cui hanno bisogno per decidere di contattarti, ancor prima di cliccare sul tuo sito. Un profilo incompleto o assente segnala silenziosamente "non affermato" o "non affidabile."
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>È pubblicità gratuita, praticamente per sempre.</strong> A differenza degli annunci a pagamento che si fermano nel momento in cui finisce il budget, il tuo profilo Business continua a lavorare 24 ore su 24, comparendo nelle ricerche e nelle mappe senza alcuna spesa continua.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>Apre una linea diretta con i tuoi clienti.</strong> Puoi pubblicare aggiornamenti, rispondere pubblicamente alle domande, condividere offerte e rispondere alle recensioni — tutto nello stesso pannello che le persone vedono quando cercano il tuo nome.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    In conclusione: un profilo Google Business non è più opzionale. È l'equivalente moderno di essere elencati nelle pagine gialle — solo che è la prima cosa che le persone controllano prima di decidere di fidarsi di te.
+  </p>
+
+  <p style="margin-top:40px;">
+    <a href="blog.html" class="btn lang en">&larr; Back to Blog</a>
+    <a href="blog.html" class="btn lang it" style="display:none;">&larr; Torna al Blog</a>
+  </p>
+
+</section>
+
+<!-- CONTACT INFO -->
+<div class="contact-info">
+  <a href="mailto:info@globalmedia.com" class="contact-link"> info@globalmedia.com </a>
+  <a href="https://wa.me/447301958041" class="contact-link" target="_blank"> +44 7301 958041 </a>
+  <a href="https://www.instagram.com/global_reachmedia/" class="contact-link" target="_blank"> Instagram </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Global Reach Media</p>
+</footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+  }
+</script>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.onclick = () => {
+    navLinks.classList.toggle('active');
+  };
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('active'));
+  });
+</script>
+
+</body>
+</html>

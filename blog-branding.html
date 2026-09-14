@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Reach Media | The Power of Consistent Branding</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="main-nav">
+  <div class="nav-logo">
+    <img src="images/images/logo.jpg" alt="Logo" class="logo">
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="works.html">Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+  </div>
+  <div class="lang-switcher">
+    <button onclick="switchLang('en')">EN 🇬🇧</button>
+    <button onclick="switchLang('it')"> IT🇮🇹</button>
+  </div>
+
+  <div class="hamburger" id="hamburger">&#9776;</div>
+</nav>
+
+<section id="about" style="padding-top:180px;">
+
+  <h2 class="lang en">The Power of Consistent Branding Across Every Platform</h2>
+  <h2 class="lang it" style="display:none;">Il Potere di un Brand Coerente su Ogni Piattaforma</h2>
+
+  <!-- ENGLISH -->
+  <p class="lang en">
+    Picture a business whose Instagram looks nothing like its website, whose logo changes color depending on where you see it, and whose tone swings from playful to overly formal between platforms. Even if every individual post is good, the overall impression is forgettable — or worse, untrustworthy. Consistency is what turns a logo into a brand people actually remember.
+  </p>
+
+  <p class="lang en">
+    <strong>Visual consistency builds recognition.</strong> The same logo, colors, and fonts across your website, social media, ads, and packaging mean people recognize you at a glance, without even reading your name. Recognition is the first step toward trust — and trust is what leads to a sale.
+  </p>
+
+  <p class="lang en">
+    <strong>A consistent voice builds trust.</strong> How you write matters as much as how you look. A brand that sounds professional on its website but overly casual on social media creates a subtle sense of confusion — people aren't sure who they're really dealing with.
+  </p>
+
+  <p class="lang en">
+    <strong>Every platform should feel like the same business.</strong> Someone who follows you on Instagram, then visits your website, then sees your ad, should feel like they're interacting with one coherent brand — not three different companies. That seamless experience is what separates businesses people remember from ones they scroll past.
+  </p>
+
+  <p class="lang en">
+    <strong>Inconsistency has a real cost.</strong> It's rarely dramatic — no single mismatched post loses you a customer. But small inconsistencies add up, quietly chipping away at how credible and established you appear, especially against competitors who look polished everywhere.
+  </p>
+
+  <p class="lang en">
+    The fix isn't complicated: define your colors, your logo usage, your tone of voice, and apply them everywhere — website, social, ads, even email signatures. It's one of the highest-leverage, lowest-cost investments a growing business can make.
+  </p>
+
+  <!-- ITALIAN -->
+  <p class="lang it" style="display:none;">
+    Immagina un'attività il cui Instagram non assomiglia per niente al suo sito web, il cui logo cambia colore a seconda di dove lo vedi, e il cui tono passa da scherzoso a eccessivamente formale tra una piattaforma e l'altra. Anche se ogni singolo post è valido, l'impressione generale è dimenticabile — o peggio, poco affidabile. La coerenza è ciò che trasforma un logo in un brand che le persone ricordano davvero.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>La coerenza visiva costruisce riconoscibilità.</strong> Lo stesso logo, colori e font su sito web, social media, annunci e packaging fanno sì che le persone ti riconoscano a colpo d'occhio, senza nemmeno leggere il tuo nome. Il riconoscimento è il primo passo verso la fiducia — e la fiducia è ciò che porta a una vendita.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>Un tono di voce coerente costruisce fiducia.</strong> Come scrivi conta quanto il tuo aspetto visivo. Un brand che suona professionale sul sito ma eccessivamente informale sui social crea una sottile sensazione di confusione — le persone non sono sicure con chi stanno davvero interagendo.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>Ogni piattaforma dovrebbe sembrare la stessa attività.</strong> Chi ti segue su Instagram, poi visita il tuo sito, poi vede il tuo annuncio, dovrebbe sentire di interagire con un unico brand coerente — non con tre aziende diverse. Quell'esperienza fluida è ciò che distingue le attività che le persone ricordano da quelle che scorrono senza notarle.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    <strong>L'incoerenza ha un costo reale.</strong> Raramente è drammatico — nessun singolo post fuori tono ti fa perdere un cliente. Ma le piccole incoerenze si accumulano, erodendo silenziosamente quanto appari credibile e affermato, specialmente contro concorrenti che appaiono curati ovunque.
+  </p>
+
+  <p class="lang it" style="display:none;">
+    La soluzione non è complicata: definisci i tuoi colori, l'uso del logo, il tono di voce, e applicali ovunque — sito web, social, annunci, persino le firme email. È uno degli investimenti con il rapporto costo-beneficio più alto che un'attività in crescita possa fare.
+  </p>
+
+  <p style="margin-top:40px;">
+    <a href="blog.html" class="btn lang en">&larr; Back to Blog</a>
+    <a href="blog.html" class="btn lang it" style="display:none;">&larr; Torna al Blog</a>
+  </p>
+
+</section>
+
+<!-- CONTACT INFO -->
+<div class="contact-info">
+  <a href="mailto:info@globalmedia.com" class="contact-link"> info@globalmedia.com </a>
+  <a href="https://wa.me/447301958041" class="contact-link" target="_blank"> +44 7301 958041 </a>
+  <a href="https://www.instagram.com/global_reachmedia/" class="contact-link" target="_blank"> Instagram </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Global Reach Media</p>
+</footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+  }
+</script>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.onclick = () => {
+    navLinks.classList.toggle('active');
+  };
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('active'));
+  });
+</script>
+
+</body>
+</html>
