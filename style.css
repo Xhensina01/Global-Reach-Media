@@ -259,6 +259,12 @@
     center; gap: 8px;  /* space between icon and text */ 
     transition: color 0.3s;  } 
 
+   .contact-link svg {
+     width: 18px;
+     height: 18px;
+     flex-shrink: 0;
+   }
+
    .contact-link:hover { 
     color:#00B26A;
 
