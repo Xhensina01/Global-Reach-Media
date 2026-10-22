@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://globalreachmedia.netlify.app/sitemap.xml
